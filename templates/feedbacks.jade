@@ -1,0 +1,27 @@
+extends layout
+block link
+  - var selectedMenuItem = 'feedbacks';
+block content
+  .row
+    .col-xs-12.col-md-8
+      header.page-header
+        h2 Наши лучшие работы
+          br
+          small Прочитайте отзывы наших клиентов.
+  each feedback in contents.studio['feedbacks.json'].metadata
+    .row
+      .col-xs-12.col-md-8
+        h3= feedback.caption
+        iframe(width="100%" height="100" scrolling="no" frameborder="no" src= feedback.soundcloudUrl)
+        .media
+          .media-left
+            if typeof feedback.thumbnail !== 'undefined'
+              img.media-object(src= feedback.thumbnail)
+            else
+              img.media-object(src= 'http://placehold.it/100x100')
+          .media-body
+            blockquote
+              p= feedback.quote
+              footer= feedback.author
+        
+      

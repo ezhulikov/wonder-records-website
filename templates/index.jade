@@ -1,0 +1,54 @@
+extends layout
+block link
+  - var selectedMenuItem = 'studio';
+block content
+  .row
+    .col-xs-12.col-md-8
+      header.page-header
+        h2 Студия звукозаписи &laquo;Wonder Records&raquo;
+          br
+          small Мы рады видеть вас на нашей музыкальной студии в Новороссийске.
+      p Приходя к нам, вы открываете для себя множество интересных возможностей:
+        ul
+          li Арендуйте нашу уютную студию для репетиций и записи барабанов, гитар или вокала.
+          li От тусовки с друзьями до фестиваля на открытом воздухе, вы можете наполнить свое незабываемое событие качественным и приятным звуком.
+          li Отправьте нам свой записанный материал, и профессиональный звукоинженер сведет его с гарантией качества. Мы также делаем цифровой мастеринг.
+          li Опытные инструкторы помогут сделать ваше исполнение уверенным, выразительным и намного более профессиональным. Вы можете записаться на курсы вокала, ударных, гитары, саксофона.    
+  .row
+    .col-xs-12.col-md-8
+      h3 Фотографии со студии
+    .col-xs-12.col-md-8
+      #wrStudioTour.carousel.slide(data-ride='carousel')
+        // Wrapper for slides
+        .carousel-inner(role='listbox')
+          each photo, i in contents.studio['photos.json'].metadata
+            - var photoActiveClass = ""
+            if i === 0
+              - var photoActiveClass = "active"
+            .item(class= photoActiveClass)
+              img(src= photo.url, alt= photo.alt)
+              .carousel-caption: h3= photo.caption
+        // Controls
+        a.left.carousel-control(href='#wrStudioTour', role='button', data-slide='prev')
+          span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+          span.sr-only Назад
+        a.right.carousel-control(href='#wrStudioTour', role='button', data-slide='next')
+          span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+          span.sr-only Далее
+      .hidden-xs.hidden-md.hidden-lg
+        #wrStudioThumbnails.carousel.slide(data-interval='false')
+          .carousel-inner
+            .item.active
+              each photo, i in contents.studio['photos.json'].metadata
+                .thumb(data-target='#wrStudioTour', data-slide-to= i)
+                  img(src= photo.thumbnail, alt= photo.alt)
+    #wrStudioVerticalThumbnails.hidden-xs.hidden-sm.col-md-2
+      ul.list-group
+        each photo, i in contents.studio['photos.json'].metadata
+          li.list-group-item(data-target='#wrStudioTour', data-slide-to= i)
+            img(src= photo.thumbnail, alt= photo.alt)
+    #wrCalendar.col-xs-12.col-md-8
+      h3 Расписание студии
+      iframe(src='https://calendar.google.com/calendar/embed?showTitle=0&showNav=0&showPrint=0&showCalendars=0&mode=AGENDA&height=600&wkst=2&bgcolor=%23FFFFFF&src=n9fbnrppkp68nu1qu566rlnf9g%40group.calendar.google.com&color=%23711616&ctz=Europe%2FMoscow', style='border-width:0', width='100%', height='600', frameborder='0', scrolling='yes')
+
+  

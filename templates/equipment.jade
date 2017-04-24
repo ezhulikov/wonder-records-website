@@ -1,0 +1,28 @@
+extends layout
+block link
+  - var selectedMenuItem = 'equipment';
+block content
+  .row
+    .col-xs-12.col-md-8
+      header.page-header
+        h2 Наше оборудование
+          br
+          small Мы используем только качественное оборудование.
+      table.table.table-striped
+        thead
+          tr
+            th Производитель
+            th Модель
+            th Количество
+            th.hidden-xs Информация
+        tbody
+          each gearGroup in contents.studio['gear.json'].metadata
+            tr
+              td(colspan='4')
+                strong= gearGroup.name
+            each gearItem in gearGroup.items
+              tr
+                td= gearItem.manufacturer
+                td= gearItem.model
+                td= gearItem.count
+                td.hidden-xs= gearItem.info

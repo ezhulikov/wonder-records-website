@@ -1,0 +1,38 @@
+extends layout
+block link
+  - var selectedMenuItem = 'news';
+block content 
+  .row
+    .col-xs-12.col-md-8
+      header.page-header
+        h2 Новости
+          br
+          small Последние релизы, мероприятия, статьи, скидки и многое другое.
+      each article in articles
+        .media
+          .media-left
+            a(href= article.url)
+              img.media-object(src= article.url + 'thumbnail.jpg', alt= article.title, width='100', height='100')
+          .media-body
+            h3.media-heading
+              a(href=article.url)= article.title
+              br
+              small= moment.utc(article.date).format('D MMMM')
+                | &nbsp;&dash;&nbsp;
+                = article.metadata.author
+            if article.intro.length > 0
+              != typogr(article.intro).typogrify()
+            if article.hasMore
+              p.more
+                a(href= article.url) Читать далее...
+
+block prepend footer
+  .row
+    .col-xs-12.col-md-8
+      nav(aria-label='Постраничная навигация')
+        ul.pager
+          if prevPage
+            li: a(href=prevPage.url) &laquo; Предыдущая
+          if nextPage
+            li: a(href=nextPage.url) Следующая &raquo;
+  

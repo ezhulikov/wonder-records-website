@@ -1,0 +1,261 @@
+[
+  {
+    "name": "Микшерные пульты",
+    "items": [
+      {
+        "manufacturer": "Midas",
+        "model": "Venice 240",
+        "count": "1",
+        "info": "Аналоговый, 24 канала"
+      },
+      {
+        "manufacturer": "Alesis",
+        "model": "Multimix 12",
+        "count": "1",
+        "info": "Аналоговый, 12 каналов"
+      }
+    ]
+  },
+  {
+    "name": "Приборы обработки",
+    "items": [
+      {
+        "manufacturer": "Focusrite",
+        "model": "Saffire Pro 40",
+        "count": "1",
+        "info": "Звуковая карта 8 каналов"
+      },
+      {
+        "manufacturer": "Behringer",
+        "model": "ADA8000",
+        "count": "1",
+        "info": "Звуковая карта 8 каналов"
+      },
+      {
+        "manufacturer": "dbx",
+        "model": "dbx166",
+        "count": "2",
+        "info": "Гейт/экспандер/компрессор/лимитер"
+      },
+      {
+        "manufacturer": "dbx",
+        "model": "dbx266",
+        "count": "2",
+        "info": "Гейт/экспандер/компрессор"
+      },
+      {
+        "manufacturer": "dbx",
+        "model": "dbx286",
+        "count": "1",
+        "info": "Канальная линейка"
+      },
+      {
+        "manufacturer": "dbx",
+        "model": "dbx231",
+        "count": "2",
+        "info": "Эквалайзер, 1/3-октавный"
+      },
+      {
+        "manufacturer": "Art",
+        "model": "TPS II",
+        "count": "1",
+        "info": "Ламповый преамп"
+      },
+      {
+        "manufacturer": "Lexicon",
+        "model": "MX400XL",
+        "count": "1",
+        "info": "Ревербератор/дилей"
+      },
+      {
+        "manufacturer": "Art",
+        "model": "Pro Gate",
+        "count": "1",
+        "info": "Программируемый гейт"
+      },
+      {
+        "manufacturer": "dbx",
+        "model": "db12",
+        "count": "1",
+        "info": "DI-бокс активный"
+      }
+    ]
+  },
+  {
+    "name": "Микрофоны",
+    "items": [
+      {
+        "manufacturer": "Audio-Technica",
+        "model": "AT2050",
+        "count": "1",
+        "info": "Конденсаторный с широкой диафрагмой и переключаемой диаграммой направленности"
+      },
+      {
+        "manufacturer": "SM-Audio",
+        "model": "MC01",
+        "count": "1",
+        "info": "Конденсаторный с широкой диафрагмой, кардиоид"
+      },
+      {
+        "manufacturer": "Shure",
+        "model": "PG52",
+        "count": "1",
+        "info": "Динамический кардиоидный для бас-бочки"
+      },
+      {
+        "manufacturer": "Shure",
+        "model": "Beta 91",
+        "count": "1",
+        "info": "«Лягушка», конденсаторный граничного слоя"
+      },
+      {
+        "manufacturer": "Shure",
+        "model": "PG56",
+        "count": "3",
+        "info": "Динамический кардиоидный с креплениями для барабанов"
+      },
+      {
+        "manufacturer": "Shure",
+        "model": "PG81",
+        "count": "2",
+        "info": "Конденсаторный кардиоидный"
+      },
+      {
+        "manufacturer": "Shure",
+        "model": "SM58",
+        "count": "2",
+        "info": "Динамический кардиоидный"
+      },
+      {
+        "manufacturer": "Sennheiser",
+        "model": "e835",
+        "count": "1",
+        "info": "Динамический кардиоидный"
+      },
+      {
+        "manufacturer": "Sennheiser",
+        "model": "e865",
+        "count": "1",
+        "info": "Конденсаторный суперкардиоидный"
+      },
+      {
+        "manufacturer": "dbx",
+        "model": "RTA-M",
+        "count": "1",
+        "info": "Конденсаторный всенаправленный, референсный"
+      },
+      {
+        "manufacturer": "Samson",
+        "model": "C01",
+        "count": "3",
+        "info": "Конденсаторный кардиоидный"
+      },
+      {
+        "manufacturer": "JTS",
+        "model": "CX508",
+        "count": "2",
+        "info": "«Прищепка» с передатчиком"
+      }
+    ]
+  },
+  {
+    "name": "Акустика",
+    "items": [
+      {
+        "manufacturer": "Yamaha",
+        "model": "HS80M",
+        "count": "2",
+        "info": "Мониторы ближнего поля"
+      },
+      {
+        "manufacturer": "Electro Voice",
+        "model": "Gladiator G115/118",
+        "count": "16",
+        "info": "Пассивная акустическая система 8 кВт с усилителями Electro Voice Q66/Q99 и контроллером dbx DriveRack PA+"
+      },
+      {
+        "manufacturer": "Nova",
+        "model": "L10/L12",
+        "count": "4",
+        "info": "Напольные мониторы 300/400 Вт"
+      }
+    ]
+  },
+  {
+    "name": "Инструменты",
+    "items": [
+      {
+        "manufacturer": "Pearl",
+        "model": "Forum",
+        "count": "1",
+        "info": "Барабанная установка, бочка 18”, одиночная педаль Pearl P-901, фурнитура"
+      },
+      {
+        "manufacturer": "Paiste",
+        "model": "PST8",
+        "count": "1",
+        "info": "Комплект тарелок: хайхет, крэш, райд"
+      },
+      {
+        "manufacturer": "Hughes & Kettner",
+        "model": "Coreblade",
+        "count": "1",
+        "info": "Ламповый гитарный стек"
+      },
+      {
+        "manufacturer": "Marshall",
+        "model": "MG50DFX",
+        "count": "1",
+        "info": "Гитарный комбоусилитель"
+      },
+      {
+        "manufacturer": "Apple",
+        "model": "iRig",
+        "count": "1",
+        "info": "MIDI-клавиатура"
+      },
+      {
+        "manufacturer": "Fender",
+        "model": "Stratocaster",
+        "count": "1",
+        "info": "Электрогитара, производство Мексика"
+      },
+      {
+        "manufacturer": "Gibson",
+        "model": "SG Standard",
+        "count": "1",
+        "info": "Электрогитара, производство США"
+      },
+      {
+        "manufacturer": "Fender",
+        "model": "Jazz Bass",
+        "count": "1",
+        "info": "Бас-гитара, производство Мексика"
+      },
+      {
+        "manufacturer": "Fender",
+        "model": "SA-105CE",
+        "count": "1",
+        "info": "Электроакустическая гитара"
+      },
+      {
+        "manufacturer": "Yamaha",
+        "model": "PSR-510",
+        "count": "1",
+        "info": "Синтезатор"
+      },
+      {
+        "manufacturer": "Roland",
+        "model": "HPi-6F",
+        "count": "1",
+        "info": "Электропианино"
+      },
+      {
+        "manufacturer": "Meinl, Stagg и др.",
+        "model": "-",
+        "count": "-",
+        "info": "Различные перкуссионные инструменты: конги, бонги, джембе, шейкеры, тамбурины, бубны и прочее"
+      }
+    ]
+  }
+]

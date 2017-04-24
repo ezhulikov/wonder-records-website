@@ -1,0 +1,26 @@
+[
+  {
+    "url": "http://placehold.it/900x600/e8117f/fff&text=Studio+Photo",
+    "thumbnail": "http://placehold.it/225x150/e8117f/fff&text=Studio+Photo",
+    "caption": "Фотография студии",
+    "alt": "Пример фотографии"
+  },
+  {
+    "url": "http://placehold.it/900x600/00ffff/000&text=Studio+Photo+2",
+    "thumbnail": "http://placehold.it/225x150/00ffff/000&text=Studio+Photo+2",
+    "caption": "Фотография студии",
+    "alt": "Пример фотографии"
+  },
+  {
+    "url": "http://placehold.it/900x600/612b65/fff&text=Studio+Photo+3",
+    "thumbnail": "http://placehold.it/225x150/612b65/fff&text=Studio+Photo+3",
+    "caption": "Фотография студии",
+    "alt": "Пример фотографии"
+  },
+  {
+    "url": "http://placehold.it/900x600/00ffcc/000&text=Studio+Photo+4",
+    "thumbnail": "http://placehold.it/225x150/00ffcc/000&text=Studio+Photo+4",
+    "caption": "Фотография студии",
+    "alt": "Пример фотографии"
+  }
+]

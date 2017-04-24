@@ -1,0 +1,160 @@
+$primary-color: #001122;
+$second-color: lighten($primary-color, 25%);
+$third-color: lighten($primary-color, 85%);
+$complementary-color: #f0ff12;
+$attention-color: #de0c04;
+
+$grey-base: #000;
+$lighter-grey: lighten($grey-base, 25%);
+$lightest-grey: lighten($grey-base, 50%);
+$white-base: #fff;
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'PT Sans', sans-serif;
+  color: $grey-base;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.btn-primary {
+  background-color: $second-color;
+  &:hover {
+    background-color: darken($second-color, 5%);
+  }
+  &:active {
+    background-color: darken($second-color, 10%);
+  }
+}
+
+.form-control {
+  border-radius: 0;
+  &.form-margin-md-6 {
+    @media (max-width: 768px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &:focus {
+    border-color: $second-color;
+    box-shadow: 0px 0px 8px transparentize($second-color, 0.5);
+  }
+}
+
+#wrNavigation {
+  margin-top: 1em;
+  li {
+    &.active {
+      a {
+        border-bottom: solid 5px $second-color;
+        background: $second-color;
+        color: $white-base;
+      }
+    }
+
+    a {
+      background: transparent;
+      color: $second-color;
+
+      &:hover {
+        border-bottom: solid 5px $second-color;
+      }
+    }
+  }
+}
+
+#wrLogoImage {
+  height: 86px;
+  width: 86px;
+  margin-left: -15px;
+}
+
+#wrLogo {
+  h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+  }
+  color: $primary-color;
+  strong {
+    color: $second-color;
+  }
+}
+
+#wrHumburgerNavigation {
+  .icon-bar {
+    border: 3px solid $primary-color;
+  }
+}
+
+.item {
+  .thumb {
+    width: 25%;
+  	cursor: pointer;
+  	float: left;
+    margin-top: 2px;
+  }
+
+  .thumb img {
+    width: 100%;
+  }
+
+  .thumb:not(:first-child) {
+    padding-left: 2px;
+  }
+}
+
+.carousel-caption {
+  h3 {
+    text-shadow: 1px 1px 1px 0px $grey-base;
+    color: $white-base;
+  }
+}
+
+#wrStudioVerticalThumbnails {
+  li {
+    overflow: hidden;
+    height: 100px;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    margin-bottom: 10px;
+    margin-left: -17px;
+  }
+}
+
+#wrYandexMap {
+  box-shadow: 3px 2px 5px transparentize($second-color, 0.7);
+  &:active {
+    box-shadow: 3px 2px 8px transparentize($second-color, 0.5);
+  }
+}
+
+#wrCalendar {
+  margin-top: 1em;
+}
+
+#wrFooter {
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+.page-footer {
+  margin-top: 2em;
+  border-top: 1px solid rgb(238,238,238); // same as bootstrap for page-header
+  padding-top: 1em;
+}
+
+.page-sharing {
+  margin-top: 1em;
+}

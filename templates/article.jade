@@ -1,0 +1,34 @@
+extends layout
+block link
+  - var selectedMenuItem = 'news';
+block append head
+  style.
+    img {
+      max-width: 100%;
+    }
+block content
+  .row
+    .col-xs-12.col-md-8
+
+      header.page-header
+        h2= page.metadata.title
+          br
+          if page.metadata.subtitle
+            small= page.metadata.subtitle
+      article!= typogr(page.html).typogrify()
+      footer.page-footer
+        em Автор:&nbsp;
+          = page.metadata.author
+        br
+        em Опубликовано:&nbsp;
+          = moment.utc(page.metadata.date).format('D MMMM YYYY')
+        .page-sharing
+          p Поделись статьей:
+          script(src='//yastatic.net/es5-shims/0.0.2/es5-shims.min.js')
+          script(src='//yastatic.net/share2/share.js')
+          .ya-share2(data-services='vkontakte,facebook,odnoklassniki,twitter,whatsapp')
+          
+      nav(aria-label='Все новости')
+        ul.pager
+          li
+            a(href='/news.html') &laquo; Все новости

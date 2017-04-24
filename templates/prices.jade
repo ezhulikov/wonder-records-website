@@ -1,0 +1,25 @@
+extends layout
+block link
+  - var selectedMenuItem = 'prices';
+block content 
+  .row
+    .col-xs-12.col-md-8
+      header.page-header
+        h2 Наши цены
+          br
+          small Мы предлагаем доступные цены на все наши услуги.
+      table.table.table-striped
+        thead
+          tr
+            th Название
+            th Описание
+            th Цена
+        tbody
+          each priceItem in contents.studio['prices.json'].metadata
+            tr
+              td
+                strong= priceItem.caption
+              td
+                = priceItem.description
+              td
+                = priceItem.charge

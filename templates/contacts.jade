@@ -1,0 +1,50 @@
+extends layout
+block link
+  - var selectedMenuItem = 'contacts';
+block content
+  .row
+    .col-xs-12.col-md-8
+      header.page-header
+        h2 Забронировать студию
+          br
+          small Вы можете сделать это любым удобным для вас способом.
+      h3 Форма обратной связи
+      form#wrBookingForm(accept-charset='utf-8', enctype='multipart/form-data', method='post', action='http://www.emailmeform.com/builder/form/8cTu3z1M0cb1nAs09', novalidate)
+        .form-group.row
+          .col-xs-12.col-md-6
+            input.form-control.form-margin-md-6(type='text', name='element_0', value='', placeholder='Как Вас зовут?')
+          .col-xs-12.col-md-6
+            input.form-control(type='text', name='element_1', value='', placeholder='Как с Вами связаться?')
+        .form-group
+            textarea.form-control(name='element_2', rows='9', placeholder='Чем мы можем Вам помочь?')
+        input(name='element_counts', value='3', type='hidden')
+        input(name='embed', value='forms', type='hidden')
+        .form-group
+          input.btn.btn-primary(type='submit', value='Отправить')
+          input.btn.btn-default(type='reset', value='Очистить')  
+          .alert.alert-success.hidden(role='alert') Все получилось! Скоро мы с вами свяжемся.
+      h3 Контакты
+      address
+        p
+          | 353925, Россия, Краснодарский край, 
+          br 
+          | г. Новороссийск, пр. Дзержинского, 211, корпус 1
+        p 
+          i.glyphicon.glyphicon-envelope
+          a(href="mailto://w.records@yandex.ru") &nbsp;Электронная почта
+          br
+          i.glyphicon.glyphicon-link 
+          a(href="https://vk.com/wonder.records") &nbsp;Группа "Вконтакте"
+        p 
+          i.glyphicon.glyphicon-phone
+          | &nbsp;Евгений, 
+          a(href="tel://+79887694458") +7 (988) 769-44-58
+          br
+          i.glyphicon.glyphicon-phone
+          | &nbsp;Олег, 
+          a(href="tel://+79887696500") +7 (988) 769-65-00
+      #wrYandexMap
+        script(type='text/javascript', charset='utf-8', async, src='https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Rk63GljqvIVi-Hjzcdgv1hDPa6GXE4Dc&amp;width=753&amp;height=345&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true')
+
+block customScripts
+script(src=contents.js['emailme-form.js'].url)

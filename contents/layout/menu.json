@@ -1,0 +1,32 @@
+[
+  {
+    "id": "studio",
+    "href": "/",
+    "title": "Студия"
+  },
+  {
+    "id": "equipment",
+    "href": "/equipment.html",
+    "title": "Оборудование"
+  },
+  {
+    "id": "feedbacks",
+    "href": "/feedbacks.html",
+    "title": "Отзывы"
+  },
+  {
+    "id": "prices",
+    "href": "prices.html",
+    "title": "Цены"
+  },
+  {
+    "id": "contacts",
+    "href": "/contacts.html",
+    "title": "Контакты"
+  },
+  {
+    "id": "news",
+    "href": "/news.html",
+    "title": "Новости"
+  }
+]
