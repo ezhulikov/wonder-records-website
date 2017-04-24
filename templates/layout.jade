@@ -24,10 +24,9 @@ html(lang='ru')
             span.icon-bar
             span.icon-bar
           a(href='/')
-            #wrLogoImage.pull-left
-              img(src= contents.img['logo-color-icon.svg'].url)
             #wrLogo.navbar-brand.pull-left
-              h1 WONDER
+              img(src= contents.img['wrlogo.png'].url)
+              h1.sr-only WONDER
                 br
                 strong RECORDS
         #wrNavigation.collapse.navbar-collapse
@@ -38,14 +37,14 @@ html(lang='ru')
                 - var menuItemClass = 'active';
               li(class= menuItemClass)
                 a(href= menuItem.href, title= menuItem.title)= menuItem.title
-                
+
     .container
       block content
-  
+
       block footer
         footer#wrFooter
           p.small Wonder Records, #{new Date().getFullYear()}
-          
+
     script(src='https://code.jquery.com/jquery-1.12.4.min.js')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
     block customScripts

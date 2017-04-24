@@ -4,5 +4,11 @@
     "typogr": "0.5.x",
     "underscore": "1.4.x"
   },
-  "private": "true"
+  "private": "true",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "wintersmith": "^2.3.6"
+  }
 }
