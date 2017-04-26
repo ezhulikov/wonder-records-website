@@ -5,6 +5,7 @@
     "owner": "Wonder Records",
     "description": "Студия звукозаписи в Новороссийске"
   },
+  "output": "../wonder-records.github.io/",
   "plugins": [
     "./plugins/paginator.coffee"
   ],

@@ -7,7 +7,6 @@ var wintersmith = require('wintersmith');
 
 var env = wintersmith('./wintersmith.json');
 var scssPath = './_scss/*.scss';
-var outputDir = '../wonder-records.github.io/';
 
 gulp.task('scss', function() {
   return gulp.src(scssPath)
@@ -21,7 +20,7 @@ gulp.task('scss:watch', function () {
 });
 
 gulp.task('build', ['scss'], function() {
-    return env.build(outputDir);
+    return env.build();
 });
 
 gulp.task('preview', ['scss:watch'], function() {
