@@ -1,0 +1,14 @@
+extends layout
+block link
+  - var selectedMenuItem = 'examples';
+block content
+  .row
+    .col-xs-12.col-md-8
+      header.page-header
+        h2 Наши лучшие работы
+          br
+          small Ознакомьтесь с нашими примерами записи, сведения и мастеринга.
+  each example in contents.studio['feedbacks.json'].metadata
+    .row
+      .col-xs-12.col-md-8
+        iframe(width="100%" height="100" scrolling="no" frameborder="no" src= example.soundcloudUrl)

@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
@@ -7,6 +7,7 @@ var wintersmith = require('wintersmith');
 
 var env = wintersmith('./wintersmith.json');
 var scssPath = './_scss/*.scss';
+var outputDir = '../wonder-records.github.io/';
 
 gulp.task('scss', function() {
   return gulp.src(scssPath)
@@ -20,7 +21,7 @@ gulp.task('scss:watch', function () {
 });
 
 gulp.task('build', ['scss'], function() {
-    return env.build();
+    return env.build(outputDir);
 });
 
 gulp.task('preview', ['scss:watch'], function() {
