@@ -28,5 +28,10 @@
     "id": "news",
     "href": "/news.html",
     "title": "Новости"
+  },
+  {
+    "id": "novodrum",
+    "href": "/articles/novodrum-school/",
+    "title": "Школа ударных"
   }
 ]

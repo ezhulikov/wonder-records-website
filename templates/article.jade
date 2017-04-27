@@ -2,10 +2,7 @@ extends layout
 block link
   - var selectedMenuItem = 'news';
 block append head
-  style.
-    img {
-      max-width: 100%;
-    }
+  link(rel='stylesheet' href=contents.css['article.min.css'].url)
 block content
   .row
     .col-xs-12.col-md-8
