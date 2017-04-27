@@ -32,10 +32,7 @@ html(lang='ru')
         #wrNavigation.collapse.navbar-collapse
           ul.nav.navbar-nav
             each menuItem in contents.layout['menu.json'].metadata
-              - var menuItemClass = '';
-              if selectedMenuItem === menuItem.id
-                - var menuItemClass = 'active';
-              li(class= menuItemClass)
+              li(class= selectedMenuItem === menuItem.id ? 'active' : '')
                 a(href= menuItem.href, title= menuItem.title)= menuItem.title
 
     .container

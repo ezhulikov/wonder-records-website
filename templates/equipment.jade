@@ -21,8 +21,15 @@ block content
               td(colspan='4')
                 strong= gearGroup.name
             each gearItem in gearGroup.items
-              tr
+              - var isRequestingGear = typeof gearItem.category !== 'undefined' && gearItem.category === 'requesting';
+              tr(class= isRequestingGear ? 'warning' : '')
                 td= gearItem.manufacturer
                 td= gearItem.model
                 td= gearItem.count
                 td.hidden-xs= gearItem.info
+                  if isRequestingGear
+                    | &nbsp;
+                    sup *
+          tr
+            td(colspan=4)
+              em * - Данный инструмент не входит в постоянное оснащение студии Wonder Records и не является собственностью студии. Использование данного инструмента возможно только по предварительному согласованию. За использование, транспортировку или аренду данного инструмента может взиматься отдельная плата, подробности уточняйте у сотрудников студии.

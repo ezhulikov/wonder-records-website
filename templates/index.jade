@@ -23,10 +23,7 @@ block content
         // Wrapper for slides
         .carousel-inner(role='listbox')
           each photo, i in contents.studio['photos.json'].metadata
-            - var photoActiveClass = ""
-            if i === 0
-              - var photoActiveClass = "active"
-            .item(class= photoActiveClass)
+            .item(class= i === 0 ? "active" : "")
               img(src= photo.url, alt= photo.alt)
               .carousel-caption: h3= photo.caption
         // Controls

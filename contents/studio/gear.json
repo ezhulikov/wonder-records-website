@@ -136,7 +136,8 @@
         "manufacturer": "Sennheiser",
         "model": "e865",
         "count": "1",
-        "info": "Конденсаторный суперкардиоидный"
+        "info": "Конденсаторный суперкардиоидный",
+        "category": "requesting"
       },
       {
         "manufacturer": "dbx",
@@ -218,43 +219,50 @@
         "manufacturer": "Fender",
         "model": "Stratocaster",
         "count": "1",
-        "info": "Электрогитара, производство Мексика"
+        "info": "Электрогитара, производство Мексика",
+        "category": "requesting"
       },
       {
         "manufacturer": "Gibson",
         "model": "SG Standard",
         "count": "1",
-        "info": "Электрогитара, производство США"
+        "info": "Электрогитара, производство США",
+        "category": "requesting"
       },
       {
         "manufacturer": "Fender",
         "model": "Jazz Bass",
         "count": "1",
-        "info": "Бас-гитара, производство Мексика"
+        "info": "Бас-гитара, производство Мексика",
+        "category": "requesting"
       },
       {
         "manufacturer": "Fender",
         "model": "SA-105CE",
         "count": "1",
-        "info": "Электроакустическая гитара"
+        "info": "Электроакустическая гитара",
+        "category": "requesting"
       },
       {
         "manufacturer": "Yamaha",
         "model": "PSR-510",
         "count": "1",
-        "info": "Синтезатор"
+        "info": "Синтезатор",
+        "category": "requesting"
       },
       {
         "manufacturer": "Roland",
         "model": "HPi-6F",
         "count": "1",
-        "info": "Электропианино"
+        "info": "Электропианино",
+        "category": "requesting"
       },
       {
         "manufacturer": "Meinl, Stagg и др.",
         "model": "-",
         "count": "-",
-        "info": "Различные перкуссионные инструменты: конги, бонги, джембе, шейкеры, тамбурины, бубны и прочее"
+        "info": "Различные перкуссионные инструменты: конги, бонги, джембе, шейкеры, тамбурины, бубны и прочее",
+        "category": "requesting"
       }
     ]
   }
